@@ -14,7 +14,7 @@ const Episode = require('./episodes');
 var routemyapp = function(){
     app.get('/api/index',function(req,res){
         Episode.find({}, {_id:0},function(err,items){
-            if (err) {res.json({errors:err})}
+         if (err) {res.json({errors:err})}
             else {res.json(items)};
         });
     });
