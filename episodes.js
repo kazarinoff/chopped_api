@@ -3,7 +3,7 @@ const Schema =mongoose.Schema;
 
 const episodeSchema = new Schema({
     season:{type:Number},
-    seriesno:{type:Number},
+    seriesno:{type:{}},
     seasonno:{type:Number},
     title:{type:String},
     premiere:{type:Date},
